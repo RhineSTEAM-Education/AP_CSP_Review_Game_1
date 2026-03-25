@@ -1,32 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Game Icons</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        img {
-            width: 100px;
-            margin: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>AP CSP Review Game</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #0f172a;
+  color: white;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.menu-item {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  background-color: #334155;
+}
+
+.mc-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 14px;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Game Icons</h1>
+<h1>
+  <img class="mc-icon" src="welcome.png" alt="Welcome">
+  AP CSP Review Game
+</h1>
 
-    <img src="1.png" alt="Icon 1">
-    <img src="2.png" alt="Icon 2">
-    <img src="3.png" alt="Icon 3">
-    <img src="4.png" alt="Icon 4">
-    <img src="5.png" alt="Icon 5">
-    <img src="6.png" alt="Icon 6">
-    <img src="7.png" alt="Icon 7">
-    <img src="8.png" alt="Icon 8">
-    <img src="9.png" alt="Icon 9">
+<div class="menu-container">
+
+  <!-- Start -->
+  <div class="menu-item">
+    <img class="mc-icon" src="start.png" alt="Start">
+    <div class="label">Start Game</div>
+  </div>
+
+  <!-- Networking -->
+  <div class="menu-item">
+    <img class="mc-icon" src="networking.png" alt="Networking">
+    <div class="label">Networking</div>
+  </div>
+
+  <!-- Security -->
+  <div class="menu-item">
+    <img class="mc-icon" src="security.png" alt="Security">
+    <div class="label">Security</div>
+  </div>
+
+  <!-- Timer Mode -->
+  <div class="menu-item">
+    <img class="mc-icon" src="timer.png" alt="Timer">
+    <div class="label">Speed Round</div>
+  </div>
+
+  <!-- Streak -->
+  <div class="menu-item">
+    <img class="mc-icon" src="streak.png" alt="Streak">
+    <div class="label">Streak Mode</div>
+  </div>
+
+  <!-- Results -->
+  <div class="menu-item">
+    <img class="mc-icon" src="results.png" alt="Results">
+    <div class="label">Results</div>
+  </div>
+
+  <!-- Incorrect -->
+  <div class="menu-item">
+    <img class="mc-icon" src="incorrect.png" alt="Incorrect">
+    <div class="label">Review Mistakes</div>
+  </div>
+
+  <!-- Settings -->
+  <div class="menu-item">
+    <img class="mc-icon" src="settings.png" alt="Settings">
+    <div class="label">Settings</div>
+  </div>
+
+</div>
 
 </body>
 </html>
